@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+h1{
+    font-size:80px;
+    padding:10px;
+    font-family: 'Permanent Marker', cursive;
+    color:#263238;
+}
+
+a{
+    text-decoration: none;
+    color:#263238;
+}
+
+@media screen and (max-width: 480px) {
+    .topbar{
+        text-align:right;
+        margin-right:0px;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+    .topbar a {
+        font-family: 'Roboto', sans-serif;
+        font-size:1em;
+        color:#31D8A0;;
+        padding:0.5em 2em;
+        border-radius:1em;
+        background-color:white;
+        border: 1px solid #31D8A0;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        cursor:pointer;
+    }
+
+    .topbar a:hover{
+        background-color:#31D8A0;
+        color:white;
+    }
+
+}
+
+@media screen and (min-width: 481px) {
+    .topbar{
+        text-align:right;
+        margin-right:20px;
+        margin-top:50px;
+    }
+
+    .topbar a {
+            font-family: 'Roboto', sans-serif;
+            font-size:1.4em;
+            color:#31D8A0;;
+            padding:0.5em 2em;
+            border-radius:1em;
+            background-color:white;
+            border: 1px solid #31D8A0;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor:pointer;
+    }
+
+    .topbar a:hover{
+            background-color:#31D8A0;
+            color:white;
+    }
+}

@@ -1,0 +1,65 @@
+<!-- James Mete
+www.jamesmete.com
+Aug 1, 2017 -->
+<!-- Main Container for chord sheet app -->
+<div class="boxContainer">
+
+    <!-- Control Bar Container -->
+    <div class="bControls">
+        <!-- Control for song length input -->
+        <div class="timepicker">
+        Song Length
+            <hr>
+            <input type="number" [(ngModel)]="minutes" size="3" maxlength="3" min="0" max="120" step="1" placeholder="MM">
+            :
+            <input type="number"  [(ngModel)]="seconds" size="2" maxlength="2" min="0" max="60" step="1" placeholder="SS">
+        </div>
+        <!-- Control for BPM input -->
+        <div class="bpmInput">
+            BPM
+            <hr>
+            <input type="number" [(ngModel)]="bpm" size="3" maxlength="3" min="0" max="320" step="1">
+        </div>
+
+        <!-- Future code for time signature customization -->
+        <!-- <div class="timeSigInput">
+            Time Signature
+            <hr>
+            <select [(ngModel)]="timeSig">
+                <option value="4/4">4/4</option>
+            </select>
+        </div> -->
+
+        <!-- Control Buttons -->
+        <button class ="controlBut" id="initRowBut" (click)="initRows()">Initialize Rows</button>
+        <button class ="controlBut" id="addRowBut" (click)="newRow()">Add Row</button>
+        <button class ="controlBut" id="playBut" (click)="jTest()">Play</button>
+        <button class ="controlBut" id="saveBut" (click)="saveRows()">Save</button>
+
+    </div>
+
+    <!-- Container for sheet -->
+    <ul class="hContainer">
+        <!-- Bar rows -->
+        <li class="hRow" *ngFor="let hobby of hobbies">
+            <!-- Progress Bar for each row -->
+            <div class="pBar">
+                <div class="progressbar"></div>
+            </div>
+            <!-- Beat boxes -->
+            <div class="hBox" *ngFor="let h of hobby.title" (click)="edith(h)">
+                <label *ngIf="h.editing==false">{{h.title}}</label>
+                <input class="edit" *ngIf="h.editing" myAutofocus [value]="h.title" #editedh (selectItem)="itemSelected($event, h)"  (blur)="blurTEST(h, editedh.value)" (keyup.enter)="updateEditingh(h, editedh.value)" (keyup.escape)="cancelEditingh(h)" [(ngModel)]="model"  [ngbTypeahead]="search" placeholder="Search Chords">
+            </div>
+            <!-- Delete Row Button -->
+            <div class="dRowIcon" (click)="removeRow(hobby)">X</div>
+
+            <!-- Lyric Sentence Row -->
+            <div class="senRow">
+                <div *ngIf="hobby.editing==false"(click)="editLyrics(hobby)">{{hobby.lyrics}}</div>
+                <input *ngIf="hobby.editing" myAutofocus [value]="hobby.lyrics" #editedlyrics (blur)="updateEditingLyrics(hobby, editedlyrics.value)" (keyup.enter)="updateEditingLyrics(hobby, editedlyrics.value)" (keyup.escape)="cancelEditingLyrics(hobby)" placeholder="Type lyrics here">
+            </div>
+
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,47 @@
+.infocont{
+
+    width:90%;
+    max-width:900px;
+    text-align: center;
+    margin:0 auto;
+
+}
+
+.inforow{
+    text-align: center;
+    display:block;
+    margin-top:20px;
+}
+
+.inforow a{
+    text-decoration: none;
+}
+
+.infotitles{
+    color:#81D4FA;
+    font-size:2em;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.infotext{
+    color:black;
+    text-align:left;
+    max-width:600px;
+    margin:0 auto;
+
+}
+
+.contactz{
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.4em;
+    color:#31D8A0;
+}
+
+md-grid-list{
+}
+
+md-grid-tile{
+    border: 1px solid black;
+}

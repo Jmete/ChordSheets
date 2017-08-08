@@ -1,0 +1,394 @@
+
+
+@media screen and (max-width: 480px) {
+    .hContainer{
+    margin: 0 auto;
+    text-align: center;
+    width:100%;
+}
+
+.hRow{
+    list-style-type: none;
+    height:100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    font-size:16px;
+}
+
+
+
+.hBox{
+    /*margin:6px;*/
+    /*box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 4px 0 rgba(0, 0, 0, 0.1);*/
+    border:1px solid rgba(0, 0, 0, 0.1);
+    background-color:white;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:1.2em;
+    display:inline-block;
+    width:19%;
+    cursor:pointer;
+
+
+}
+
+.hBox label{
+    cursor:pointer;
+
+}
+
+.dRowIcon{
+    width:20%;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:1.2em;
+    background-color:white;
+    color:red;
+    transition: ease-in-out 0.2s;
+    cursor:pointer;
+    display:inline-block;
+
+
+}
+
+.dRowIcon:hover{
+    color:white;
+    background-color:red;
+}
+
+.edit{
+    width:80%;
+    height:100%;
+    /*padding-top:10px;
+    padding-bottom:10px;*/
+    text-align:center;
+    font-size:0.8em;
+
+
+}
+
+.pBar{
+    width:76%;
+    margin-left:6px;
+}
+
+
+.senRow{
+    width:76%;
+    margin-left:3px;
+}
+
+.senRow div{
+    width:100%;
+    font-size:1.2em;
+    text-align:left;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:3px;
+    white-space: pre;
+}
+
+.senRow input{
+    /*margin-right:17%;*/
+    width:100%;
+    font-size:1.1em;
+
+}
+
+.progressbar{
+
+/*    -webkit-transition: width 2.5s ease;
+    transition: width 2.5s ease;*/
+
+    background-color:#00E676;
+    height:10px;
+    width:0%;
+}
+    /*CONTROLS*/
+    .bControls{
+        text-align:center;
+
+        width:100%;
+
+    }
+
+    .controlBut{
+        padding:20px;
+        border-radius:15px;
+        background-color:white;
+        transition:0.2s;
+        cursor:pointer;
+        vertical-align: middle;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width:90%;
+    }
+
+    #initRowBut{
+        border:1px solid #607D8B;
+        color:#607D8B;
+    }
+
+    #initRowBut:hover{
+        background-color:#607D8B;
+        color:white;
+    }
+
+    #addRowBut{
+        border:1px solid #03A9F4;
+        color:#03A9F4;
+    }
+
+    #addRowBut:hover{
+        background-color:#03A9F4;
+        color:white;
+    }
+
+    #playBut{
+        color:#00E676;
+        border:1px solid #00E676;
+    }
+
+    #playBut:hover{
+        background-color:#00E676;
+        color:white;
+    }
+
+    #saveBut{
+        color:#673AB7;
+        border:1px solid #673AB7;
+    }
+
+    #saveBut:hover{
+        background-color:#673AB7;
+        color:white;
+    }
+
+    .timepicker{
+        display:inline-block;
+        text-align: center;
+        vertical-align: middle;
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    .timepicker input{
+        padding:5px;
+        width:60px;
+    }
+
+    .bpmInput{
+        display:inline-block;
+        text-align:center;
+        vertical-align: middle;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .bpmInput input{
+        padding:5px;
+        width:60px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .hContainer{
+    margin: 0 auto;
+    text-align: center;
+    width:900px;
+}
+
+.hRow{
+    list-style-type: none;
+    height:100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    font-size:16px;
+}
+
+
+
+.hBox{
+    /*margin:6px;*/
+    /*box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 4px 0 rgba(0, 0, 0, 0.1);*/
+    border:1px solid rgba(0, 0, 0, 0.1);
+    background-color:white;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:1.2em;
+    display:inline-block;
+    width:202px;
+    cursor:pointer;
+
+
+}
+
+.hBox label{
+    cursor:pointer;
+}
+
+.dRowIcon{
+    width:40px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:1.2em;
+    background-color:white;
+    color:red;
+    transition: ease-in-out 0.2s;
+    cursor:pointer;
+    display:inline-block;
+
+
+}
+
+.dRowIcon:hover{
+    color:white;
+    background-color:red;
+}
+
+.edit{
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    font-size:0.8em;
+
+
+}
+
+.pBar{
+    width:94%;
+    margin-left:4px;
+}
+
+
+.senRow{
+    width:94%;
+    margin-left:3px;
+}
+
+.senRow div{
+    width:100%;
+    font-size:1.2em;
+    text-align:left;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:3px;
+    white-space: pre;
+}
+
+.senRow input{
+    width:100%;
+    font-size:1.1em;
+
+}
+
+.progressbar{
+
+/*    -webkit-transition: width 2.5s ease;
+    transition: width 2.5s ease;*/
+
+    background-color:#00E676;
+    height:10px;
+    width:0%;
+}
+    /*CONTROLS*/
+    .bControls{
+        text-align:center;
+        margin:20px;
+
+    }
+
+    .controlBut{
+        padding:20px;
+        border-radius:15px;
+        background-color:white;
+        transition:0.2s;
+        cursor:pointer;
+        vertical-align: middle;
+        margin-left:10px;
+        margin-right:10px;
+        min-width:80px;
+    }
+
+    #initRowBut{
+        border:1px solid #607D8B;
+        color:#607D8B;
+    }
+
+    #initRowBut:hover{
+        background-color:#607D8B;
+        color:white;
+    }
+
+    #addRowBut{
+        border:1px solid #03A9F4;
+        color:#03A9F4;
+    }
+
+    #addRowBut:hover{
+        background-color:#03A9F4;
+        color:white;
+    }
+
+    #playBut{
+        color:#00E676;
+        border:1px solid #00E676;
+    }
+
+    #playBut:hover{
+        background-color:#00E676;
+        color:white;
+    }
+
+    #saveBut{
+        color:#673AB7;
+        border:1px solid #673AB7;
+    }
+
+    #saveBut:hover{
+        background-color:#673AB7;
+        color:white;
+    }
+
+    .timepicker{
+        display:inline-block;
+        text-align: center;
+        vertical-align: middle;
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    .timepicker input{
+        padding:5px;
+        width:60px;
+    }
+
+    .bpmInput{
+        display:inline-block;
+        text-align:center;
+        vertical-align: middle;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .bpmInput input{
+        padding:5px;
+        width:60px;
+    }
+}
+
+/*Future code for time signature customizaton*/
+/*.timeSigInput{
+    display:inline-block;
+    text-align:center;
+    vertical-align: middle;
+    margin-left:10px;
+    margin-right:10px;
+}
+.timeSigInput select{
+    padding:5px;
+    width:50px;
+}*/

@@ -1,0 +1,39 @@
+<!-- Info Component -->
+<div class="infocont">
+<div class="row inforow">
+    <h3 class="infotitles">What is this?</h3>
+    <p class="infotext">Chord Sheets is a web app that allows you to create, edit, save, and play along with chord sheets in an interactive manner!</p><br>
+    <p class="infotext">Simply enter in the song length and bpm, then click initialize rows. An empty chord sheet will be created which you can edit and save.</p><br>
+    <p class="infotext">By clicking on the individual beats or lyric section, you can edit them. Press ENTER to save your edit. You can press TAB to insert an autocompleted chord, then press ENTER. Alternatively, you can click on one of the autocomplete choices. Clicking outside the box will cancel the edit.</p><br>
+    <p class="infotext">NOTE: Due to the instant chord search, if you wish to enter a regular major chord then type your note (Example: 'C'), then press SPACE then ENTER to avoid the autocomplete interfering.</p><br>
+    <p class="infotext">NOTE: While the site is built using responsive design, it can still cause some issues at the moment with vertical mobile viewing. Please view horizontally for a better experience.</p>
+</div>
+<div class="row inforow">
+    <h3 class="infotitles">How is this made?</h3>
+    <p class="infotext">This site is written using Angular 4, Javascript, HTML5, and CSS3</p><br>
+    <p class="infotext">The app is split into two main areas, the controls and the actual music sheet. The bars/rows are created as an array that is dynamically updated via Angular 4, and most of the functions use that to their advantage.</p><br>
+    <p class="infotext">The initialize rows button calculates the amount of bars needed at the specific bpm and song length, and then creates a new sheet array with those.</p><br>
+    <p class="infotext">The add row button simply adds a new row to the sheet by pushing a new ChordRow object to the array.</p><br>
+    <p class="infotext">The play button uses jQuery to loop through the created elements and animate a progress bar to show your progress. The speed of the bar is directly linked to the bpm and number of bars which allows you to keep track of your place in the song accurately.</p><br>
+    <p class="infotext">The save button locally saves all the information supplied to localstorage in the browser. This allows you to keep your work until you write over it!</p><br>
+</div>
+<div class="row inforow">
+    <h3 class="infotitles">Who made this?</h3>
+    <p class="infotext">My name is James Mete.</p><br>
+    <p class="infotext">I love to design, code, and have fun. I have played, taught, and wrote music for over 10 years now.</p><br>
+    <p class="infotext">Due to being self-taught, I never learned how to read "real" music notation, so I would always learn and write in chord sheet format. I personally find chord sheets much easier to read, especially in a jam or gig session. Originally I wrote all my chord sheets in simple text files, but I started this project to make them more interactive, efficient, and nicer looking. I hope you all enjoy this project and have some fun. If you have any questions feel free to contact me!</p>
+</div>
+<div class="row inforow">
+    <h3 class="infotitles">Contact</h3>
+    <a href="http://www.jamesmete.com"><h5 class="infotext contactz">www.jamesmete.com</h5></a><br>
+    <p class="infotext socials">
+        <a href="https://twitter.com/Jmete"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/jmete/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/jpmete/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/JamesMete"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.twitch.tv/vyprix"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>
+
+    </p>
+</div>
+
+</div>
